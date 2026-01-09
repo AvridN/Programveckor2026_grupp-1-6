@@ -145,4 +145,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef6ec2936ddb82488f7fadeb5335784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hookattack
+  Player: {fileID: 245365458379101101}
   Hook: {fileID: 7751256197164778447, guid: 7f992fea3037cf94285783bb4032b423, type: 3}

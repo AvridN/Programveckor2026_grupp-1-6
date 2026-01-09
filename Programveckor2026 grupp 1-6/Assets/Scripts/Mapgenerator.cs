@@ -42,7 +42,10 @@ public class Mapgenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
 
+        }
     }
 
     void setupdungeon()
@@ -73,7 +76,19 @@ public class Mapgenerator : MonoBehaviour
             bool created = false;
             if (x > 1) created |= visitcell(index - 1);
             if (x < 9) created |= visitcell(index + 1);
+            if (index > 20) created |= visitcell(index - 10);
+            if (index < 70) created |= visitcell(index + 10);
+
+            if (created == false)
+                endrooms.Add(index);
         }
+        if (floorplancount < minrooms)
+        {
+            setupdungeon();
+            return;
+        }
+
+        setupspecialrooms();
     }
 
     void setupspecialrooms() { }

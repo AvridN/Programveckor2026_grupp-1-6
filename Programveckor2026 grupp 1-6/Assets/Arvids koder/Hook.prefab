@@ -105,8 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hooksscript
   Player: {fileID: 0}
-  hookspeed: 6
-  hookrange: 6.5
+  hookspeed: 8
 --- !u!50 &8688385782781009065
 Rigidbody2D:
   serializedVersion: 5

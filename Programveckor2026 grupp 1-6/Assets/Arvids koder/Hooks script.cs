@@ -4,7 +4,8 @@ public class Hooksscript : MonoBehaviour
 {
 
     Rigidbody2D rb;
-    public GameObject Player;
+    public Transform Player;
+
 
     public float hookspeed;
 
@@ -12,18 +13,29 @@ public class Hooksscript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+
     }
     int engångs = 0;
+
+    public float hookrange;
+
+
+
     // Update is called once per frame
     void Update()
     {
+
+
+
+
+
+
         if (engångs == 0)
         {
 
 
-
-            transform.position = Player.transform.position;
-
+            rb.MovePosition(Player.position);
 
 
 
@@ -61,7 +73,23 @@ public class Hooksscript : MonoBehaviour
                 rb.linearVelocityY = 0;
 
             }
+            if (rb.position.x > hookrange)
+            {
+                rb.position = new Vector2(hookrange, 0);
+            }
+            if (rb.position.x < -hookrange)
+            {
+                rb.position = new Vector2(-hookrange, 0);
+            }
 
+            if (rb.position.y > hookrange)
+            {
+                rb.position = new Vector2(0, hookrange);
+            }
+            if (rb.position.y < -hookrange)
+            {
+                rb.position = new Vector2(0, -hookrange);
+            }
 
         }
 

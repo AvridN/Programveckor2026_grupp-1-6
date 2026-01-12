@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e016f418345e0409b086aad63acecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hooksscript
-  Player: {fileID: 245365458379101101, guid: b78f09c4e3c92de449d666d294c9015c, type: 3}
-  Hook: {fileID: 7751256197164778447}
+  Player: {fileID: 0}
   hookspeed: 6
+  hookrange: 6.5
 --- !u!50 &8688385782781009065
 Rigidbody2D:
   serializedVersion: 5

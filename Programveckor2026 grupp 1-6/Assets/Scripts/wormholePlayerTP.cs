@@ -6,6 +6,7 @@ public class wormholePlayerTP : MonoBehaviour
     bool botten = false;
     bool Right = false;
     bool left = false;
+    public int rumsplacering = Random.Range(1, 7);
 
 
 
@@ -20,10 +21,11 @@ public class wormholePlayerTP : MonoBehaviour
     {
 
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    public void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Övredörr") && Input.GetKeyDown(KeyCode.E))
         {
+            int rumplacering = Random.Range(1, 7);
 
         }
     }

@@ -16,7 +16,7 @@ public class astroidhögkvarter : MonoBehaviour
         int placering = gameObject.GetComponent<wormholePlayerTP>().rumsplacering;
         if (placering == 1)
         {
-            gameObject.CompareTag("a1")
+
         }
         if (placering == 2)
         {

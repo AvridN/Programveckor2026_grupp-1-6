@@ -18,8 +18,8 @@ public class Hooksscript : MonoBehaviour
     }
     int engångs = 0;
 
-    public float hookrange;
-
+    float hookrange = 4;
+    int timersak = 0;
 
 
     // Update is called once per frame
@@ -45,6 +45,7 @@ public class Hooksscript : MonoBehaviour
                 rb.linearVelocityX = 0;
                 rb.linearVelocityY = hookspeed;
 
+
             }
 
 
@@ -54,6 +55,7 @@ public class Hooksscript : MonoBehaviour
                 rb.linearVelocityX = 0;
                 rb.linearVelocityY = -hookspeed;
 
+
             }
 
 
@@ -62,6 +64,7 @@ public class Hooksscript : MonoBehaviour
                 engångs++;
                 rb.linearVelocityX = hookspeed;
                 rb.linearVelocityY = 0;
+
 
             }
 
@@ -73,25 +76,54 @@ public class Hooksscript : MonoBehaviour
                 rb.linearVelocityY = 0;
 
             }
-            if (rb.position.x > hookrange)
-            {
-                rb.position = new Vector2(hookrange, 0);
-            }
-            if (rb.position.x < -hookrange)
-            {
-                rb.position = new Vector2(-hookrange, 0);
-            }
 
-            if (rb.position.y > hookrange)
-            {
-                rb.position = new Vector2(0, hookrange);
-            }
-            if (rb.position.y < -hookrange)
-            {
-                rb.position = new Vector2(0, -hookrange);
-            }
 
         }
+
+        if (engångs > 0)
+        {
+            // uppåt
+            if (rb.position.y > Player.position.y + hookrange)
+            {
+                // rb.MovePosition(new Vector2(Player.position.x, Player.position.y - hookrange));
+                rb.MovePosition(Player.position);
+                engångs = 0;
+            }
+
+
+            // nedåt
+            if (rb.position.y < Player.position.y - hookrange)
+            {
+                // rb.MovePosition(new Vector2(Player.position.x, Player.position.y + hookrange));
+                rb.MovePosition(Player.position);
+                engångs = 0;
+            }
+
+
+            // högeråt
+            if (rb.position.x > Player.position.x + hookrange)
+            {
+                // rb.MovePosition(new Vector2(Player.position.x + hookrange, Player.position.y));
+
+
+                rb.MovePosition(Player.position);
+                engångs = 0;
+
+            }
+
+            //vänsteråt
+
+            if (rb.position.x < Player.position.x - hookrange)
+            {
+                // rb.MovePosition(new Vector2(Player.position.x - hookrange, Player.position.y));
+                rb.MovePosition(Player.position);
+                engångs = 0;
+            }
+
+
+        }
+
+
 
     }
 }

@@ -2,8 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - "\xD6vred\xF6rr"
+  - "H\xF6grad\xF6rr"
+  - "V\xE4nstrad\xF6rr"
+  - "Nedred\xF6rr"
   layers:
   - Default
   - TransparentFX
@@ -41,3 +45,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  m_RenderingLayers:
+  - Default

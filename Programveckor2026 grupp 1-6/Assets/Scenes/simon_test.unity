@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 950531239}
   - component: {fileID: 950531238}
   - component: {fileID: 950531240}
+  - component: {fileID: 950531241}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -364,7 +365,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -434,7 +435,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c4b52b391ef7a448924063b0e231fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 1
+  speed: 3
+--- !u!114 &950531241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950531234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd0580cd8f5e3c9448fb8e2f047e7c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::hurtplayer
 --- !u!1 &1954028942
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,10 +462,9 @@ GameObject:
   - component: {fileID: 1954028943}
   - component: {fileID: 1954028948}
   - component: {fileID: 1954028947}
-  - component: {fileID: 1954028949}
   m_Layer: 0
   m_Name: skript block
-  m_TagString: Untagged
+  m_TagString: enemy_movment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4876ddf71944c640ad223893fd70e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  farfar: {fileID: 0}
 --- !u!212 &1954028945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -549,7 +562,7 @@ Transform:
   m_GameObject: {fileID: 1954028942}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.12, z: 0}
+  m_LocalPosition: {x: -0.56, y: 1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -628,18 +641,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1954028949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954028942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0580cd8f5e3c9448fb8e2f047e7c96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

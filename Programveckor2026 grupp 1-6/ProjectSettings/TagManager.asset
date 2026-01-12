@@ -6,6 +6,10 @@ TagManager:
   tags:
   - enemy_movement
   - enemy_movment
+  - "\xD6vred\xF6rr"
+  - "H\xF6grad\xF6rr"
+  - "V\xE4nstrad\xF6rr"
+  - "Nedred\xF6rr"
   layers:
   - Default
   - TransparentFX

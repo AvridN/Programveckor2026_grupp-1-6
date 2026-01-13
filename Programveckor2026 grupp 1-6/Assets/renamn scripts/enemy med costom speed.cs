@@ -15,7 +15,7 @@ public class tank_enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = new Vector2(0, 0);
-        player = FindObjectOfType<PlayerMovement>().gameObject;
+        player = FindObjectOfType<PlayerMovement1>().gameObject;
 
     }
     // skrip för splearens namn 

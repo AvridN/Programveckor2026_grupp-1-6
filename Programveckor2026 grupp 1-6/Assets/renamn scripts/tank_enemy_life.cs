@@ -3,11 +3,11 @@ using UnityEngine;
 public class hurt_enemy_any : MonoBehaviour
 {
     int Hp;
-    public float maxhp;
+    public int maxhp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        maxhp = Hp;
+        Hp = maxhp;
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class hurt_enemy_any : MonoBehaviour
         {
             Hp--;
         }
-        if (Hp == 0) ;
+        if (Hp == 0)
         {
             Destroy(gameObject);
 
@@ -32,5 +32,4 @@ public class hurt_enemy_any : MonoBehaviour
 
 
 
-}
 }

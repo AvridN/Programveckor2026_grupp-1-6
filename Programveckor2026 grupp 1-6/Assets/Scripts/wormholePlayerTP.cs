@@ -23,24 +23,24 @@ public class wormholePlayerTP : MonoBehaviour
         if (collision.gameObject.CompareTag("Övredörr"))
         {
             int rumplacering = Random.Range(1, 7);
-            transform.position = new Vector2(0.09f, -4.69f);
+            transform.position = new Vector2(0, 0);
 
         }
         if (collision.gameObject.CompareTag("Högradörr"))
         {
             int rumsplacering = Random.Range(1, 7);
-            transform.position = new Vector2(-8.33f, -0.02f);
+            transform.position = new Vector2(0, 0);
 
         }
         if (collision.gameObject.CompareTag("Vänstradörr"))
         {
             int rumsplacering = Random.Range(1, 7);
-            transform.position = new Vector2(7.6f, -0.19f);
+            transform.position = new Vector2(0, 0);
 
         }
         if (collision.gameObject.CompareTag("Nedredörr"))
         {
-            transform.position = new Vector2(0.22f, 4.5f);
+            transform.position = new Vector2(0, 0);
             int rumsplacering = Random.Range(1, 7);
 
         }

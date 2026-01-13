@@ -2,10 +2,7 @@ using UnityEngine;
 
 public class wormholePlayerTP : MonoBehaviour
 {
-    bool top = false;
-    bool botten = false;
-    bool Right = false;
-    bool left = false;
+
     public int rumsplacering = Random.Range(1, 7);
 
 

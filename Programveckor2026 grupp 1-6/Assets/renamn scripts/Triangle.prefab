@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5722604309094681037}
   - component: {fileID: -276333426866730063}
   - component: {fileID: -949387505554835435}
+  - component: {fileID: 6120439308647607025}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: enemy_movment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,3 +166,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6120439308647607025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646258920961554243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6331cb86208c4384c980536619b14b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemy_movment
+  speed: {fileID: 0}

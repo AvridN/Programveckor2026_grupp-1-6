@@ -13,7 +13,11 @@ public class planet : MonoBehaviour
     void Update()
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         int spawnfrequency = gameObject.GetComponent<wormholePlayerTP>().spawnplanet;
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes

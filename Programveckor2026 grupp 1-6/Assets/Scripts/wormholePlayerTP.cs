@@ -3,12 +3,9 @@ using UnityEngine;
 public class wormholePlayerTP : MonoBehaviour
 {
 
-    private readonly int Rumsplacering = Random.Range(1, 7);
+    readonly int rumsplacering = Random.Range(1, 7);
 
-    public wormholePlayerTP(int rumsplacering)
-    {
-        Rumsplacering = rumsplacering;
-    }
+
 
 
 

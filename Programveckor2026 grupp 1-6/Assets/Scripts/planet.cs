@@ -12,6 +12,10 @@ public class planet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
         int spawnfrequency = gameObject.GetComponent<wormholePlayerTP>().spawnplanet;
+=======
+
+>>>>>>> Stashed changes
     }
 }

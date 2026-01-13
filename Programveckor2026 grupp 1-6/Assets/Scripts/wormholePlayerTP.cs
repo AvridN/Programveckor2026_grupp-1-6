@@ -26,6 +26,8 @@ public class wormholePlayerTP : MonoBehaviour
         {
             int rumplacering = Random.Range(1, 7);
             transform.position = new Vector2(0.09f, -4.69f);
+            int spawnplanet = Random.Range(1, 5);
+
 
         }
         if (collision.gameObject.CompareTag("Högradörr") && Input.GetKeyDown(KeyCode.E))

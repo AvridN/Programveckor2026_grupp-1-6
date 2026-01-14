@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class astroidhögkvarter : MonoBehaviour
 {
-    public GameObject al;
+    [SerializeField]
+    public GameObject Astroid;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

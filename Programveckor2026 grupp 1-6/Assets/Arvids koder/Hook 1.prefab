@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e016f418345e0409b086aad63acecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hooksscript
-  Player: {fileID: 0}
+  Player: {fileID: 2815742342675838158, guid: 4a557f5ba3ade2c47b6172b7e19c5b83, type: 3}
   hookspeed: 8
 --- !u!50 &4274863617449993692
 Rigidbody2D:

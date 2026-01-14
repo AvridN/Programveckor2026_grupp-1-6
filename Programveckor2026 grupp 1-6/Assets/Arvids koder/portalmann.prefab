@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6678581314873398383}
   - component: {fileID: 4461485247233401738}
   - component: {fileID: 7442092976672077002}
+  - component: {fileID: 8845840312812941102}
   m_Layer: 0
-  m_Name: Hexagon Point Top
-  m_TagString: "V\xE4nstrad\xF6rr"
+  m_Name: portalmann
+  m_TagString: "d\xF6rr1"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,3 +138,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8828125, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8845840312812941102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875542483535390633}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d999bec688808c640b19891319bd5d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wormholespawn
+  Wormhole: {fileID: 0}

@@ -33,4 +33,3 @@ public class hurt_enemy_any : MonoBehaviour
 
 
 }
-}

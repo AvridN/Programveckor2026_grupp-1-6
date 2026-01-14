@@ -20,29 +20,32 @@ public class wormholePlayerTP : MonoBehaviour
     }
     public void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Övredörr"))
+        // if (collision.gameObject.CompareTag("enemy_movment"))
         {
-            int rumplacering = Random.Range(1, 7);
-            transform.position = new Vector2(0, 0);
+            if (collision.gameObject.CompareTag("Övredörr"))
+            {
+                int rumsplacering = Random.Range(1, 7);
+                transform.position = new Vector2(0, 0);
 
-        }
-        if (collision.gameObject.CompareTag("Högradörr"))
-        {
-            int rumsplacering = Random.Range(1, 7);
-            transform.position = new Vector2(0, 0);
+            }
+            if (collision.gameObject.CompareTag("Högradörr"))
+            {
+                int rumsplacering = Random.Range(1, 7);
+                transform.position = new Vector2(0, 0);
 
-        }
-        if (collision.gameObject.CompareTag("Vänstradörr"))
-        {
-            int rumsplacering = Random.Range(1, 7);
-            transform.position = new Vector2(0, 0);
+            }
+            if (collision.gameObject.CompareTag("Vänstradörr"))
+            {
+                int rumsplacering = Random.Range(1, 7);
+                transform.position = new Vector2(0, 0);
 
-        }
-        if (collision.gameObject.CompareTag("Nedredörr"))
-        {
-            transform.position = new Vector2(0, 0);
-            int rumsplacering = Random.Range(1, 7);
+            }
+            if (collision.gameObject.CompareTag("Nedredörr"))
+            {
+                transform.position = new Vector2(0, 0);
+                int rumsplacering = Random.Range(1, 7);
 
+            }
         }
     }
 }

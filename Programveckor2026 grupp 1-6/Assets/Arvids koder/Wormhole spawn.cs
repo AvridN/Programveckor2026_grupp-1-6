@@ -22,7 +22,7 @@ public class Wormholespawn : MonoBehaviour
             {
 
 
-                Vector2 spawnlocation = new Vector2(-7f, 0f);
+                Vector2 spawnlocation = new Vector2(-6f, 0f);
                 Instantiate(Wormhole, spawnlocation, Quaternion.identity);
                 baraengång = false;
             }

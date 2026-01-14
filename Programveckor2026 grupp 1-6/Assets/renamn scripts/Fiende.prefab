@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35b1715bad90ae49b252687872354dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::hurt_enemy_any
-  maxhp: 1
+  maxhp: 2
 --- !u!114 &-6242086032538651291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,4 +192,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbe87abcad38d12458d3494ccdec58d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::tank_enemy
-  speed: 1
+  speed: 2

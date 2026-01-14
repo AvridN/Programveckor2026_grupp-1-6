@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   speed: 6
+  sida: 6.5
+  uppner: 3.5
 --- !u!61 &6556743642853325727
 BoxCollider2D:
   m_ObjectHideFlags: 0

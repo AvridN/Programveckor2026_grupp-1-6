@@ -5,6 +5,8 @@ public class PlayerMovement1 : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
+    public float sida;
+    public float uppner;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +26,25 @@ public class PlayerMovement1 : MonoBehaviour
 
         Vector2 direction = new Vector2(x, y).normalized;
         rb.linearVelocity = direction * speed;
+
+        if (rb.position.x > sida)
+        {
+            rb.position = new Vector2(sida, transform.position.y);
+        }
+        if (rb.position.x < -sida)
+        {
+            rb.position = new Vector2(-sida, transform.position.y);
+        }
+
+
+        if (rb.position.y > uppner)
+        {
+            rb.position = new Vector2(transform.position.x, uppner);
+        }
+        if (rb.position.y < -uppner)
+        {
+            rb.position = new Vector2(transform.position.x, -uppner);
+        }
 
     }
 }

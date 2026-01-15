@@ -1,20 +1,16 @@
 using UnityEngine;
 
-public class bossbehavior : MonoBehaviour
+public class bosshealth : MonoBehaviour
 {
-    [SerializeField]
-    public GameObject Radius;
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }

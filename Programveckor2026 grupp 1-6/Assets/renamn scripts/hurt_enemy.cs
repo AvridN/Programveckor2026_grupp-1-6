@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class hurt_enemy : MonoBehaviour
+public class hurt_enemy1 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

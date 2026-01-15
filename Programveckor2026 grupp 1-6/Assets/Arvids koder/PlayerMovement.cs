@@ -7,6 +7,7 @@ public class PlayerMovement1 : MonoBehaviour
     public float speed;
     public float sida;
     public float uppner;
+    public float bspeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,6 +46,14 @@ public class PlayerMovement1 : MonoBehaviour
         {
             rb.position = new Vector2(transform.position.x, -uppner);
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
 
+            rb.linearVelocity = direction * bspeed;
+        }
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            rb.linearVelocity = direction * speed;
+        }
     }
 }

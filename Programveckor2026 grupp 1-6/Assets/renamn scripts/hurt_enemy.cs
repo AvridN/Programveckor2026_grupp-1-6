@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class hurt_enemy1 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,17 +16,16 @@ public class hurt_enemy1 : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Hoock"))  // ska ändras till fiender script
-        {
+        if (collision.gameObject.CompareTag("Hoock"))
             Destroy(gameObject);
-
-
-        }
-
-
-
-
+        { SceneManager.LoadScene(4); }
     }
 }
+
+
+
+
+
+
 
 

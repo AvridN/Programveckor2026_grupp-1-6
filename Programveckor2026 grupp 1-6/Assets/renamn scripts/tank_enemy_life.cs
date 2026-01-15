@@ -22,7 +22,7 @@ public class hurt_enemy_any : MonoBehaviour
         {
             Hp--;
         }
-        if (Hp == 0) ;
+        if (Hp == 0)
         {
             Destroy(gameObject);
 

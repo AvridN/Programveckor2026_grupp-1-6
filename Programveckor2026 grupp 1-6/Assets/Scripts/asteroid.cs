@@ -15,8 +15,7 @@ public class asteroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int placering = gameObject.GetComponent<wormholePlayerTP>().rumsplacering;
+
+
     }
-
-
 }

@@ -2,23 +2,27 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class tpdowntoplanet : MonoBehaviour
 {
+    GameObject[] enemies;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("tp_planet") && Input.GetKey(KeyCode.E))
+        enemies = GameObject.FindGameObjectsWithTag("enemy_movment");
+        if (enemies.Length == 0)
         {
-            SceneManager.LoadScene(4);
-        } 
-      
+            if (collision.gameObject.CompareTag("Player") && Input.GetKey(KeyCode.E))
+            {
+                SceneManager.LoadScene(4);
+            }
+        }
     }
 }

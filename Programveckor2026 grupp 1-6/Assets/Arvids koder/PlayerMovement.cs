@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement1 : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator animator;
     public float speed;
     public float sida;
     public float uppner;
@@ -12,6 +13,7 @@ public class PlayerMovement1 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -55,5 +57,27 @@ public class PlayerMovement1 : MonoBehaviour
         {
             rb.linearVelocity = direction * speed;
         }
+        if (direction.y > 0)
+        {
+            animator.Play("front");
+        }
+        else if (direction.y < 0)
+        {
+            animator.Play("back");
+        }
+        else if (direction.x > 0)
+        {
+            animator.Play("right");
+        }
+        else if (direction.x < 0)
+        {
+            animator.Play("left");
+        }
+        else
+        {
+            animator.Play("idle");
+        }
+
+
     }
 }

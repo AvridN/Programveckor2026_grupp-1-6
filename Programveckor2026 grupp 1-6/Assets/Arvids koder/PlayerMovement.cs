@@ -77,7 +77,13 @@ public class PlayerMovement1 : MonoBehaviour
         {
             animator.Play("neutral");
         }
+        void OnCollisionEnter2D(Collision collision)
+        {
+            collision.gameObject
+                .GetComponent<LarryBodySegment>()
+                ?.TakeDamage();
 
+        }
 
     }
 }

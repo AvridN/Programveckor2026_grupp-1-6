@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class bossradius : MonoBehaviour
+public class Collision : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,15 +13,14 @@ public class bossradius : MonoBehaviour
     {
 
     }
-    public void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            bool playerdetected = true;
-        }
-        else
-        {
-            bool playerdetected = false;
+            collision.gameObject.GetComponent < "skada spelaren" > ().hurtamount += 1;
+
+
         }
     }
 }

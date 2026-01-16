@@ -9,7 +9,7 @@ public class Bossrun : StateMachineBehaviour
     Rigidbody2D rb;
     boss boss;
 
-    override public void OnStateEneter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateinfo, int layerindex)
     {
         Player = GameObject.CompareTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();

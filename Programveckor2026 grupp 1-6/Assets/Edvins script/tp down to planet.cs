@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 public class tpdowntoplanet : MonoBehaviour
 {
     GameObject[] enemies;
+    bool engångbara = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,9 @@ public class tpdowntoplanet : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player") && Input.GetKey(KeyCode.E))
             {
+                Vector2 spawnlocation = new Vector2(-6f, 0f);
+                Instantiate(spawnlocation, Quaternion.identity);
+                engångbara = false;
                 SceneManager.LoadScene(4);
             }
         }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 83ba61cbe17a5864893ba5f0bdd6ffa7
+guid: fa4c1cb915fceb24e94fb5a73fd976aa
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 15
+    spritePixelsToUnits: 30
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639040887928965844
+  platformSettingsDirtyTick: 639041529075781528
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Hook
+  - name: Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0.4}
+    pivot: {x: 0.525, y: 0.4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 8
-      height: 5
-    spriteID: 91774d4ce6158054c93cad90f2c8e63a
+      width: 42
+      height: 46
+    spriteID: 5fdc29536b0462d4bbeb672a9092b884
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,30 +148,60 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 0.525, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 58
+      width: 42
+      height: 46
+    spriteID: b7c2fef4e75c9fe47a387ce66f544df5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 58}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 963907623
+      value0: 6531731
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Hook
+    name: melee fishk
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Hook
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 8
-        height: 5
-      spriteId: 91774d4ce6158054c93cad90f2c8e63a
+        x: 12
+        y: 3
+        width: 42
+        height: 46
+      spriteId: 5fdc29536b0462d4bbeb672a9092b884
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 3
+        width: 42
+        height: 46
+      spriteId: b7c2fef4e75c9fe47a387ce66f544df5
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -217,5 +247,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 8, y: 5}
-  previousTextureSize: {x: 16, y: 16}
+  canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 64, y: 128}

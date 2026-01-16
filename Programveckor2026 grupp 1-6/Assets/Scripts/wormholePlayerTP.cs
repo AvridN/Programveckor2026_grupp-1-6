@@ -25,7 +25,7 @@ public class wormholePlayerTP : MonoBehaviour
         if (collision.gameObject.CompareTag("dörr3"))
         {
 
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(4);
         }
 
         if (collision.gameObject.CompareTag("dörr2"))

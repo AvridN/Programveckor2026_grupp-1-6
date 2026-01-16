@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class Tpbacktospace : MonoBehaviour
+
+public class interjalmedshopitem : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,11 +15,9 @@ public class Tpbacktospace : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("tp_planet") && Input.GetKey(KeyCode.E))
-        {
-            SceneManager.LoadScene(5);
+        if (collision.gameObject.CompareTag("Player") && Input.GetKey(KeyCode.Mouse0)) 
+        { 
+         Destroy(gameObject);
         }
-
     }
-
 }

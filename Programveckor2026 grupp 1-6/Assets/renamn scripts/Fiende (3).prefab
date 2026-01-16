@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790d52bdb50d810468fdea7c51899af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooting
-  player: {fileID: 0}
+  player: {fileID: 6872169942098438348, guid: fc3b23724a4efb84a8d21c592ab1f11c, type: 3}
   bulletPrefab: {fileID: 6032251728283075927, guid: 0ea07a9db3a2cc04a8d03c42d9bd6f8d, type: 3}
   timeBetweenShots: 1
   bulletSpeed: 2

@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   speed: 6
-  sida: 6.5
+  sida: 6
   uppner: 3.5
   bspeed: 0
 --- !u!61 &2772575622043034007

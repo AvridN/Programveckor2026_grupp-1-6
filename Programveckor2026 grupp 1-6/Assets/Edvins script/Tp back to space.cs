@@ -17,7 +17,7 @@ public class Tpbacktospace : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && Input.GetKey(KeyCode.E))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(3);
 
 
         }

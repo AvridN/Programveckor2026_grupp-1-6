@@ -19,7 +19,7 @@ public class hurtplayer : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.CompareTag("enemy_movment"))  // ska ändras till fiender script
+        if (collision.gameObject.CompareTag("enemy_movment") || collision.gameObject.CompareTag("Boss"))  // ska ändras till fiender script
         {
             hurtamount++;
 

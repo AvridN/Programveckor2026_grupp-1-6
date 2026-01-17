@@ -20,9 +20,7 @@ public class LarryBodySegment : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject
-                .GetComponent<PlayerMovement1>()
-                .TakeDamage(damageToPlayer);
+            collision.gameObject.GetComponent<PlayerMovement1>();
         }
     }
 

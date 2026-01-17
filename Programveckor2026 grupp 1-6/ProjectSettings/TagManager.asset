@@ -15,6 +15,9 @@ TagManager:
   - "d\xF6rr1"
   - "d\xF6rr2"
   - "d\xF6rr3"
+  - shopplanet
+  - Boss
+  - "d\xF6rr4"
   layers:
   - Default
   - TransparentFX
@@ -24,8 +27,8 @@ TagManager:
   - UI
   - hooklayer
   - playerlayer
-  - 
-  - 
+  - planetlayer
+  - bosslayer
   - 
   - 
   - 

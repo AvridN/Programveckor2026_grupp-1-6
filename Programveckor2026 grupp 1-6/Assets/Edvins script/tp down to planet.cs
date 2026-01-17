@@ -4,7 +4,7 @@ public class tpdowntoplanet : MonoBehaviour
 {
     public GameObject shopplanet;
     GameObject[] enemies;
-    bool engångbara = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,23 +19,16 @@ public class tpdowntoplanet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         enemies = GameObject.FindGameObjectsWithTag("enemy_movment");
-        if (engångbara == true)
+
+        if (enemies.Length == 0)
         {
-            if (enemies.Length == 0)
+            if (collision.gameObject.CompareTag("shopplanet") && Input.GetKey(KeyCode.E))
             {
-                Vector2 spawnlocation = new Vector2(6f, 0f);
-                Instantiate(shopplanet, spawnlocation, Quaternion.identity);
-                engångbara = false;
 
 
+                SceneManager.LoadScene(4);
             }
         }
 
-        if (collision.gameObject.CompareTag("shopplanet") && Input.GetKey(KeyCode.E))
-        {
-
-
-            SceneManager.LoadScene(4);
-        }
     }
 }

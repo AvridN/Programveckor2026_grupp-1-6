@@ -22,6 +22,11 @@ public class wormholePlayerTP : MonoBehaviour
     }
     public void OnCollisionStay2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("dörr4"))
+        {
+
+            SceneManager.LoadScene(5);
+        }
         if (collision.gameObject.CompareTag("dörr3"))
         {
 
@@ -30,14 +35,14 @@ public class wormholePlayerTP : MonoBehaviour
 
         if (collision.gameObject.CompareTag("dörr2"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
 
         }
 
 
         if (collision.gameObject.CompareTag("dörr1"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
 
         }
 
